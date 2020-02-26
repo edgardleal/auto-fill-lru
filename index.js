@@ -7,7 +7,6 @@
  */
 
 const { LRU } = require('./lru');
-const { DiskCache } = require('./disk-cache');
 
 function createCache(options = {}) {
   return new LRU(options);
@@ -16,5 +15,4 @@ function createCache(options = {}) {
 module.exports = {
   LRU,
   createCache,
-  DiskCache,
 };
