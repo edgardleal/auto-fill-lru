@@ -5,6 +5,12 @@
 
 ![Build CI](https://github.com/edgardleal/auto-fill-lru/workflows/Build%20CI/badge.svg)
 
+## Installing
+
+```
+npm install auto-fill-lru
+```
+
 ## Examples
 
 ```js
