@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
+  "keywords": ["cache", "promise", "lru"],
   "scripts": {
     "lint": "eslint .",
     "jscp": "jscpd ."
@@ -15,7 +16,8 @@
       "badge"
     ],
     "ignore": [
-      "**/node_modules/**"
+      "**/node_modules/**",
+      ".github/**"
     ],
     "absolute": true,
     "gitignore": true
