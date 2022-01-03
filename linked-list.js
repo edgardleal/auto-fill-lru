@@ -85,6 +85,9 @@ function newList({ maxSize } = {}) {
     isNode(node) {
       return node && typeof node === 'object' && !!node.next;
     },
+    /**
+     * Add new item on the queue start
+     */
     prepend(value) {
       const node = this.isNode(value) ? value : newNode(null, null, value);
       if (!this.first) {
@@ -127,13 +130,14 @@ function newList({ maxSize } = {}) {
       return null;
     },
     /**
-     * @return {Nod
+     * @return {Node}
      */
     removeLast() {
       let result = null;
       if (this.size) {
         result = this.first.previus;
         this.first.previus = result.previus;
+        result.next = this.first;
         this.size -= 1;
       }
       return (result || {}).value;
